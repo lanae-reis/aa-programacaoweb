@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    background-color: #eddccb;
+
+}
+
+#cabecalho {
+    background-color: #846444;
+    height: 150px;
+    display: flex;
+    justify-content: center; 
+}
+
+
+#logo{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+.menu{ /*menu do cabeçalho*/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    justify-items: center;
+    border-radius: 10%;
+    border-color: #8b7763;
+}
+
+.barra_menu{ /*menu do cabeçalho*/
+    background-color: #b09274;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.menu_item{ /*menu do cabeçalho*/
+    Font-family: times;
+    grid-template-columns: repeat(5, 1fr);
+   
+}
+
+a{
+    text-decoration: none;
+    margin-right: 10px;
+    margin-inline: 10px;
+    color: #271708;
+    
+}
+
+a:hover {
+    color: #83303d;
+
+}
+
+main { /*Corpo principal da pagina*/
+    margin-left: 10%;
+    margin-right: 10%;
+    display: center;
+    align-items: center; 
+    background-color: whitesmoke;
+    min-height: 120vh; 
+}
+
+#coffeeshop{ /*Imagem página nossa história*/
+    margin: 5%;
+    float: left;
+    width: 40%;
+   
+}
+
+.titulo{
+    font-family: Didot, times;
+    font-style: italic;
+    color:  #db697c;
+    display: inline;
+    margin: 2% 5%;
+    font-size: 200%;
+    justify-content: center;
+
+
+
+}
+
+p{
+    font-family: Didot, times;
+    text-align: justify;
+    margin: 1% 5%;
+    color: #271708;
+    text-indent: 2em;
+
+    
+}
+
+footer{
+    background-color: #846444;
+    font-family: Didot, times;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color:#db697c;
+    
+}
+
+.galeria{ /*Fotos pág nosso espaço*/
+    width: 24%;
+    margin: 3%;
+    display: inline-block;
+    grid-template-columns: repeat(6, 1fr);
+    
+}
+
+.galeria:hover{
+    width: 30%;
+}
+
+.navegacao{
+    position: fixed;
+    width: 20%;
+    height: 40%;
+    background-color: whitesmoke;
+    color: #271708;
+    margin-left: 1%;
+    border: 1px solid #271708 ;
+}
+
+ul{
+    list-style: none;
+}
