@@ -128,3 +128,30 @@ footer{
 ul{
     list-style: none;
 }
+
+.conteiner{
+    display: flex;
+    border: 25px #271708;
+
+
+}
+
+.conteiner img{
+    width: 20%;
+    margin: 5%;
+}
+
+.box h2{
+    align-items: left;
+    margin: 5%;
+    color: #83303d;
+
+
+}
+
+.box p{
+    text-align: center;
+    height: 25%;
+}
+
+
