@@ -1,8 +1,9 @@
 body{
     margin: 0;
-    background-color: #eddccb;
+    background-color: #d2b89e;
 
 }
+
 
 #cabecalho {
     background-color: #846444;
@@ -12,16 +13,9 @@ body{
 }
 
 
-#logo{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    
-}
-
 .menu{ /*menu do cabeçalho*/
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     justify-items: center;
     border-radius: 10%;
     border-color: #8b7763;
@@ -34,11 +28,6 @@ body{
 
 }
 
-.menu_item{ /*menu do cabeçalho*/
-    Font-family: times;
-    grid-template-columns: repeat(5, 1fr);
-   
-}
 
 a{
     text-decoration: none;
@@ -54,12 +43,12 @@ a:hover {
 }
 
 main { /*Corpo principal da pagina*/
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     display: center;
     align-items: center; 
-    background-color: whitesmoke;
-    min-height: 120vh; 
+    background-color: #e9d9ca;
+    min-height: 130vh; 
 }
 
 #coffeeshop{ /*Imagem página nossa história*/
@@ -108,6 +97,7 @@ footer{
     margin: 3%;
     display: inline-block;
     grid-template-columns: repeat(6, 1fr);
+
     
 }
 
@@ -115,33 +105,26 @@ footer{
     width: 30%;
 }
 
-.navegacao{
-    position: fixed;
-    width: 20%;
-    height: 40%;
-    background-color: whitesmoke;
-    color: #271708;
-    margin-left: 1%;
-    border: 1px solid #271708 ;
-}
-
 ul{
     list-style: none;
 }
 
-.conteiner{
+.conteiner{/*layout pag cardápio*/
     display: flex;
-    border: 25px #271708;
+    flex: wrap;
+    border: 1px solid  #271708 ;
+    height: 50vh;
 
 
 }
 
-.conteiner img{
+.conteiner img{/*pag cardápio*/
     width: 20%;
     margin: 5%;
 }
 
-.box h2{
+.box h2{ /*pag cardápio*/
+    font-family: Didot, times;
     align-items: left;
     margin: 5%;
     color: #83303d;
@@ -149,9 +132,61 @@ ul{
 
 }
 
-.box p{
-    text-align: center;
+.box p{/*pag cardápio*/
+    font-family: Didot, times;
+    text-align: justify;
     height: 25%;
 }
 
+#eventos_titulo{ /*pag eventos*/
+    font-family: Didot, times;
+    font-style: italic;
+    color:  #db697c;
+    display: inline-block;
+    margin: 2% 5%;
+    font-size: 500%;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+from {
+  margin-left: 100%;
+  width: 300%;
+}
+
+to {
+  margin-left: 5%;
+  width: 100%;
+}
+}
+
+input{
+    color: black;
+    display: inline-table;
+    margin: 5px auto;
+    border:#db697c;
+    border-radius: 30px 30px 30px 30px;
+    text-align: center;
+}
+#name-label, #email-label {
+    display: block;
+    color: #db697c;
+    
+    
+}
+#submit {
+    background-color:#db697c;
+    color: #271708 ; 
+    margin: 10px solid #BA4B2F ;
+    border: 10px #BA4B2F;
+    border-radius: 30px 30px 30px 30px;
+    
+    
+}
+
+#submit:hover {
+    color: #83303d;
+
+}
 
